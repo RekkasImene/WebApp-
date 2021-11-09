@@ -1,0 +1,42 @@
+<! DOCTYPE html >
+<html>
+<head>
+    <h1 id="title"> Tableau de bord </h1>
+    <link rel =' stylesheet ' href = './css/style.css ' />
+    <script src ="./js/myscripts.js"> </script >
+</head>
+<body class="body">
+    <label for="name">Entrez un nombre pour calculer son carré :</label>
+
+    <input type="number" id="name" name="name" required
+           minlength="4" maxlength="8" size="10" border>
+    <br>
+    <div>
+        <br>
+        <button id="buttonCarre" onclick="Square.calculSquare(getNumber())">Carré</button>
+        <br>
+    </div>
+
+    <div>
+        <br>
+        <button id="buttonDiv" onclick="Div.countDiv(getNumber())">Compter les diviseurs</button>
+        <br>
+    </div>
+
+    <br>
+    <button id="button" onclick="Android.showToast('Salut!')">Show</button>
+    <br>
+    <br>
+    <br>
+    <br>
+    <a href = javascript:void(0); onclick ="Android.showToast(document.getElementById('name').value)">Show toast ! (2) </a>
+    <br>
+    <div id="resultSquare">
+
+    </div>
+    <div id="resultDiv">
+
+    </div>
+</body>
+
+</html>
